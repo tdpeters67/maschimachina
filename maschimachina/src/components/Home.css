@@ -1,0 +1,32 @@
+.home-content {
+  height: 100%;
+  padding: 2% 10% 0% 10%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 5rem;
+  height: 1000px;
+  background-repeat: no-repeat;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
