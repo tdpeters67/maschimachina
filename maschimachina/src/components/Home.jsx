@@ -8,22 +8,18 @@ export default function Home() {
 
   return (
     <div className="home-content">
-      <section
-        className="title"
-        style={{
-          backgroundImage: `url(${
-            homePhotos[Math.floor(Math.random() * homePhotos.length)]
-          })`,
-        }}
-      >
+      <section className="title">
         <h1>jewelry design</h1>
         <h1>{"\u00B7"} </h1>
         <h1> bespoke fabrication</h1>
       </section>
-      {/* <img
-        src={homePhotos[Math.floor(Math.random() * homePhotos.length)]}
-        alt="home photo"
-      ></img> */}
+      {
+        <img
+          src={homePhotos[Math.floor(Math.random() * homePhotos.length)]}
+          alt="home photo"
+          className="home-photo"
+        ></img>
+      }
       <section className="title">
         <h1>
           <a href="/collections">collections</a>

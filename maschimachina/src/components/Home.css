@@ -3,7 +3,6 @@
   padding: 2% 10% 0% 10%;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .title {
@@ -11,14 +10,22 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  gap: 5rem;
-  height: 1000px;
+  gap: 1.5rem;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  z-index: 2;
+
   background-repeat: no-repeat;
 }
 
-img {
+.home-photo {
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
-  max-width: 100%;
+  width: 35rem;
+  text-align: center;
+  z-index: -2;
 }
 
 h1 {
