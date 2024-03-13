@@ -2,6 +2,7 @@ import "./Home.css";
 import img1 from "../assets/HomePage/HomePageSplash1.png";
 import img2 from "../assets/HomePage/HomePageSplash2.png";
 import img3 from "../assets/HomePage/HomePageSplash3.png";
+import Footer from "./Footer";
 
 export default function Home() {
   let homePhotos = [img1, img2, img3];
@@ -33,6 +34,7 @@ export default function Home() {
           <a href="/catalog">catalog</a>
         </h1>
       </section>
+      <Footer />
     </div>
   );
 }
