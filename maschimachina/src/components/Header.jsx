@@ -4,7 +4,9 @@ export default function Header() {
   return (
     <>
       <div className="header">
-        <a href="/">Photo</a>
+        <a href="/">
+          <img className="header-img" src="src/assets/header-img.jpg" />
+        </a>
       </div>
     </>
   );

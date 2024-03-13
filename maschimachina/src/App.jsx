@@ -3,6 +3,7 @@ import Collections from "./components/Collections";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import { Routes, Route } from "react-router-dom";
+import { galleryDescriptions } from "./components/galleryDescriptions";
 
 function App() {
   return (
@@ -16,12 +17,8 @@ function App() {
           path="/theworldawake"
           element={
             <Gallery
-              galleryName="The World Awake"
-              galleryText="All four mountings reflect modern architecture, evidenced in calibrated contours, defined edges,
-and understated ornament. To breathe life into the muted surfaces and pointed construction, I
-selected contrasting, verdant stones and pearls. These precious materials offer associations of
-prosperity and protection, with hues emphasizing the new.
-"
+              galleryName={galleryDescriptions[0].name}
+              galleryText={galleryDescriptions[0].description}
             />
           }
         />
