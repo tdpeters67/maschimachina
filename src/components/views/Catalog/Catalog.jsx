@@ -1,9 +1,8 @@
 import Header from "../../common/Header/Header";
+import { PageLayout } from "../../common/Layout/PageLayout";
 import "./Catalog.css";
 export default function Catalog() {
-  return (
-    <>
-      <Header />
+  return <PageLayout>
       <div className="catalog-content">
         <img src="src/assets/catalogcover.jpg" className="catalog-photo"></img>
         <div className="catalog-text">
@@ -22,6 +21,5 @@ export default function Catalog() {
           </button>
         </div>
       </div>
-    </>
-  );
+    </PageLayout>
 }

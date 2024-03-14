@@ -2,15 +2,14 @@ import img1 from "/assets/collection-images/iMaschination.png";
 import img2 from "/assets/collection-images/TheWorldAwake.png";
 import img3 from "/assets/collection-images/OneTimeOnly.png";
 import "./Collections.css";
+import { PageLayout } from "../../common/Layout/PageLayout";
 
 import Header from "../../common/Header/Header";
 import Footer from "../../common/Footer/Footer";
 
 export default function Collections() {
-  return (
-    <>
+  return <PageLayout>
       <div className="collections-page-content">
-        <Header />
         <div className="collections-links">
           <a href="/gallery/1">
             <figure>
@@ -37,8 +36,6 @@ export default function Collections() {
             </figure>
           </a>
         </div>
-        <Footer />
       </div>
-    </>
-  );
+    </PageLayout>
 }
