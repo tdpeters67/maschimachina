@@ -1,10 +1,9 @@
-import Home from "./components/Home";
-import Collections from "./components/Collections";
-import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
-import Catalog from "./components/Catalog";
+import Home from "./components/views/Home/Home";
+import Collections from "./components/views/Collections/Collections";
+import Gallery from "./components/views/Gallery/Gallery";
+import Contact from "./components/views/Contact/Contact";
+import Catalog from "./components/views/Catalog/Catalog";
 import { Routes, Route } from "react-router-dom";
-import { galleryDescriptions } from "./components/galleryDescriptions";
 
 function App() {
   return (
@@ -13,43 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/collections" element={<Collections />} />
         <Route path="/catalog" element={<Catalog />} />
-        <Route
-          path="/iMaschination"
-          element={
-            <Gallery
-              galleryName={galleryDescriptions[0].name}
-              galleryText={galleryDescriptions[0].description}
-            />
-          }
-        />
-        <Route
-          path="/theworldawake"
-          element={
-            <Gallery
-              galleryName={galleryDescriptions[1].name}
-              galleryText={galleryDescriptions[1].description}
-            />
-          }
-        />
-        <Route
-          path="/onetimeonly"
-          element={
-            <Gallery
-              galleryName={galleryDescriptions[2].name}
-              galleryText={galleryDescriptions[2].description}
-            />
-          }
-        />
-        <Route
-          path="/customs"
-          element={
-            <Gallery
-              galleryName={galleryDescriptions[3].name}
-              galleryText={galleryDescriptions[3].description}
-            />
-          }
-        />
-
+        <Route path="/gallery/:galleryId" element={<Gallery />}/>
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>

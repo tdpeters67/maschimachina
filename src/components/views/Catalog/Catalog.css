@@ -1,0 +1,22 @@
+.catalog-content {
+  display: flex;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.catalog-photo {
+  width: 30rem;
+  height: auto;
+}
+
+.catalog-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* justify-content: first baseline; */
+}
+
+.catalog-title {
+  font-size: 5rem;
+  white-space: nowrap;
+}
