@@ -6,12 +6,11 @@ import { PageLayout } from "../../common/Layout/PageLayout";
 
 export default function Gallery({}) {
   Gallery.propTypes = {
-    id : PropTypes.int,
+    id: PropTypes.int,
   };
 
-  let params = useParams()
-  const gallery = getGalleryConfig(parseInt(params.galleryId))
-
+  let params = useParams();
+  const gallery = getGalleryConfig(parseInt(params.galleryId));
 
   return (
     <PageLayout>
@@ -20,12 +19,16 @@ export default function Gallery({}) {
           <div className="gallery-name">{gallery.name}</div>
           <div className="gallery-description">{gallery.description}</div>
         </div>
-        <ul className="grid media-grid">{gallery.assets.map((item, index) => (
-              <li key={index} className="grid-item">
-                <img src={`/assets/gallery/${params.galleryId}/${item.id}.png`} alt={item.alt} className="scrolled-photo" />
-              </li>
-            )
-          )}
+        <ul className="grid media-grid media-scroller">
+          {gallery.assets.map((item, index) => (
+            <li key={index} className="grid-item">
+              <img
+                src={`/assets/gallery/${params.galleryId}/${item.id}.png`}
+                alt={item.alt}
+                className="scrolled-photo"
+              />
+            </li>
+          ))}
         </ul>
       </div>
     </PageLayout>

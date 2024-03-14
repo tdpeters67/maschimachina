@@ -4,11 +4,9 @@ import img3 from "/assets/collection-images/OneTimeOnly.png";
 import "./Collections.css";
 import { PageLayout } from "../../common/Layout/PageLayout";
 
-import Header from "../../common/Header/Header";
-import Footer from "../../common/Footer/Footer";
-
 export default function Collections() {
-  return <PageLayout>
+  return (
+    <PageLayout>
       <div className="collections-page-content">
         <div className="collections-links">
           <a href="/gallery/1">
@@ -38,4 +36,5 @@ export default function Collections() {
         </div>
       </div>
     </PageLayout>
+  );
 }

@@ -1,8 +1,10 @@
 import "./Contact.css";
-import { PageLayout } from "../../common/Layout/PageLayout";
+import Header from "../../common/Header/Header";
 
 export default function Contact() {
-  return <PageLayout>
+  return (
+    <>
+      <Header />
       <div className="contact-content">
         <form
           action="https://getform.io/f/panrvnka"
@@ -22,5 +24,6 @@ export default function Contact() {
           <button>Reach Out!</button>
         </form>
       </div>
-    </PageLayout>
+    </>
+  );
 }

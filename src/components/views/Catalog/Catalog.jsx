@@ -1,10 +1,10 @@
-import Header from "../../common/Header/Header";
 import { PageLayout } from "../../common/Layout/PageLayout";
 import "./Catalog.css";
 export default function Catalog() {
-  return <PageLayout>
+  return (
+    <PageLayout>
       <div className="catalog-content">
-        <img src="src/assets/catalogcover.jpg" className="catalog-photo"></img>
+        <img src="/assets/CatalogCover.jpg" className="catalog-photo"></img>
         <div className="catalog-text">
           <div className="catalog-title">The Catalog</div>
           <div className="catalog-description">
@@ -17,9 +17,10 @@ export default function Catalog() {
             pariatur.
           </div>
           <button className="get-pdf">
-            <a href="src/assets/regar_final.pdf">get the catalog</a>
+            <a href="/assets/Regar_Final.pdf">get the catalog</a>
           </button>
         </div>
       </div>
     </PageLayout>
+  );
 }

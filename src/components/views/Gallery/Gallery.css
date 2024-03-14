@@ -25,7 +25,7 @@
   height: auto;
 } */
 
-.media-scroller {
+/* .media-scroller {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 23%;
@@ -33,7 +33,7 @@
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   max-width: 95%;
-}
+} */
 
 .media-element {
   padding: 1em;
@@ -64,9 +64,13 @@
 }
 
 @media screen and (min-width: 798px) {
-  .grid { grid-template-columns: repeat(3, 1fr); }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (min-width: 1199px) {
-  .grid { grid-template-columns: repeat(4, 1fr); }
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
