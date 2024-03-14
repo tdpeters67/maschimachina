@@ -139,3 +139,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
+/* dru wuz heer */
+.container {
+  display: block;
+  position: relative;
+  max-width: 1400px;
+  padding: 0 30px;
+  margin: auto;
+} /* what is God's only restraint? He lacks no boundaries....*/
