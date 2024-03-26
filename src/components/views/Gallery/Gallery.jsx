@@ -19,14 +19,15 @@ export default function Gallery({}) {
           <div className="gallery-name">{gallery.name}</div>
           <div className="gallery-description">{gallery.description}</div>
         </div>
-        <ul className="grid media-grid media-scroller">
+        <ul className="grid media-grid">
           {gallery.assets.map((item, index) => (
             <li key={index} className="grid-item">
               <img
                 src={`/assets/gallery/${params.galleryId}/${item.id}.png`}
                 alt={item.alt}
-                className="scrolled-photo"
+                className="effects"
               />
+              <div className="image-title fade">{item.title}</div>
             </li>
           ))}
         </ul>
