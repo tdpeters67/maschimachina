@@ -2,12 +2,12 @@ import { useState, forwardRef } from "react";
 import "./Modal.css";
 
 const Modal = forwardRef(function Modal(
-  { gallery, galleryId, slideNumber, prevSlide, nextSlide },
+  { gallery, galleryId, slideNumber, prevSlide, nextSlide, handleCloseModal },
   ref
 ) {
-  const handleCloseModal = () => {
-    dialog.current.close();
-  };
+  //   const handleCloseModal = () => {
+  //     dialog.current.close();
+  //   };
 
   //   const prevSlide = () => {
   //     slideNumber === 0 ? setSlideNumber(0) : setSlideNumber(slideNumber - 1);

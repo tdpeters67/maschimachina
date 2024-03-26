@@ -30,6 +30,10 @@ export default function Gallery({}) {
       : setSlideNumber(slideNumber + 1);
   };
 
+  const handleCloseModal = () => {
+    dialog.current.close();
+  };
+
   let params = useParams();
   const gallery = getGalleryConfig(parseInt(params.galleryId));
 
@@ -42,6 +46,7 @@ export default function Gallery({}) {
         ref={dialog}
         prevSlide={prevSlide}
         nextSlide={nextSlide}
+        handleCloseModal={handleCloseModal}
       />
       <PageLayout>
         <div className="gallery-content">
