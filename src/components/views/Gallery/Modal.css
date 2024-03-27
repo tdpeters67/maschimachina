@@ -3,9 +3,28 @@
 }
 dialog {
   border: none;
+  overflow: hidden;
 }
 dialog::backdrop {
   background: linear-gradient(45deg, green, purple);
   opacity: 0.4;
   overflow: hidden;
+}
+
+.next-btn {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  background: none;
+}
+.back-btn {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  font-size: small;
+}
+.close-btn {
+  position: absolute;
+  top: 0%;
+  right: 0%;
 }

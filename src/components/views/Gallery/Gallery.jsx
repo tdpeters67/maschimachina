@@ -19,12 +19,7 @@ export default function Gallery({}) {
     setModalOpen(true);
     dialog.current.showModal();
     setSlideNumber(index);
-  }
-
-  if (modalOpen) {
-    if (typeof window != "undefined" && window.document) {
-      document.body.style.overflow = "hidden";
-    }
+    document.body.style.overflow = "hidden";
   }
 
   const prevSlide = () => {
