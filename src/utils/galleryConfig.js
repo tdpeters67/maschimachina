@@ -165,7 +165,7 @@ export const galleryConfig = [
   },
   {
     id: 4,
-    name: "Customs",
+    name: "Custom Orders",
     slug: "customs",
     description:
       "Bespoke jewels where you make the rules. Let’s work together to materialize the ideas in your head through drafts to prototypes to metal and gems in your hands. I fabricate in sterling (.925) and fine (.999) silver, gold alloys (10k-22k), with most gemstones accessible or ready to be pulled from my personal collection.",

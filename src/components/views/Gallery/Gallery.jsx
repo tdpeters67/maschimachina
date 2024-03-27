@@ -3,21 +3,28 @@ import PropTypes from "prop-types";
 import { getGalleryConfig } from "../../../utils/galleryConfig";
 import { useParams } from "react-router-dom";
 import { PageLayout } from "../../common/Layout/PageLayout";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Modal from "./Modal";
 
 export default function Gallery({}) {
   const dialog = useRef();
   const [slideNumber, setSlideNumber] = useState(0);
+  const [modalOpen, setModalOpen] = useState(false);
 
   Gallery.propTypes = {
     id: PropTypes.int,
   };
 
   function openLightBox(index) {
+    setModalOpen(true);
     dialog.current.showModal();
     setSlideNumber(index);
-    console.log(gallery.assets[slideNumber]);
+  }
+
+  if (modalOpen) {
+    if (typeof window != "undefined" && window.document) {
+      document.body.style.overflow = "hidden";
+    }
   }
 
   const prevSlide = () => {
@@ -32,6 +39,7 @@ export default function Gallery({}) {
 
   const handleCloseModal = () => {
     dialog.current.close();
+    document.body.style.overflow = "unset";
   };
 
   let params = useParams();

@@ -14,11 +14,19 @@ export default function Catalog() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur.
           </div>
-          <button className="get-pdf">
-            <a href="/assets/Regar_Final.pdf">get the catalog</a>
-          </button>
+          <div className="get-pdf">
+            <a href="/assets/Regar_Final.pdf" className="pdf-link">
+              {" "}
+              <p>{"\u00B7"} </p>get the catalog <p>{"\u00B7"} </p>
+            </a>
+          </div>
         </div>
       </div>
     </PageLayout>

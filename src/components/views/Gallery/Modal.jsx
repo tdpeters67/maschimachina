@@ -1,4 +1,4 @@
-import { useState, forwardRef } from "react";
+import { forwardRef } from "react";
 import "./Modal.css";
 
 const Modal = forwardRef(function Modal(
@@ -6,7 +6,15 @@ const Modal = forwardRef(function Modal(
   ref
 ) {
   return (
-    <dialog ref={ref} className="sliderWrap">
+    <dialog
+      ref={ref}
+      className="sliderWrap"
+      onClick={(e) => {
+        if (e.currentTarget === e.target) {
+          handleCloseModal();
+        }
+      }}
+    >
       <button onClick={prevSlide}>Back</button>
       <button onClick={nextSlide}>Next</button>
       <button onClick={handleCloseModal}>X</button>

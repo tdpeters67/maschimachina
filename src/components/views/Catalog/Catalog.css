@@ -1,22 +1,33 @@
 .catalog-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-content: center;
   padding-left: 10rem;
   padding-right: 10rem;
+  padding-top: 10px;
 }
 .catalog-photo {
-  width: 30rem;
+  width: 32rem;
   height: auto;
 }
 
 .catalog-text {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  /* align-items: start; */
+  /* justify-content: start; */
+  gap: 20px;
+  line-height: 1.2;
   /* justify-content: first baseline; */
 }
 
 .catalog-title {
   font-size: 5rem;
   white-space: nowrap;
+}
+
+.pdf-link {
+  display: flex;
+  font-size: 1.5rem;
 }
