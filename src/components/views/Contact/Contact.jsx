@@ -18,10 +18,15 @@ export default function Contact() {
               imaschination@gmail.com
             </p>
           </div>
-          <input type="text" placeholder="Name" name="name" />
-          <input type="email" placeholder="Email" name="email" />
-          <textarea cols="30" rows="10" name="message" />
-          <button>Reach Out!</button>
+          <input type="text" placeholder="name" name="name" />
+          <input type="email" placeholder="email" name="email" />
+          <textarea
+            cols="30"
+            rows="10"
+            name="message"
+            placeholder="whatcha thinking?"
+          />
+          <button className="formbtn">send</button>
         </form>
       </div>
     </>

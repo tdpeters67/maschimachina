@@ -21,4 +21,29 @@
 form {
   display: flex;
   flex-direction: column;
+  font: inherit;
+  gap: 5px;
+}
+input {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+
+  font: inherit;
+}
+textarea {
+  background-color: white;
+  font: inherit;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.formbtn {
+  font: inherit;
+  width: 100px;
+  align-self: flex-end;
+  white-space: nowrap;
+  border: none;
 }
