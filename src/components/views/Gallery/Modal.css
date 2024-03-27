@@ -16,15 +16,18 @@ dialog::backdrop {
   top: 50%;
   right: 0%;
   background: none;
+  cursor: pointer;
 }
 .back-btn {
   position: absolute;
   top: 50%;
   left: 0%;
   font-size: small;
+  cursor: pointer;
 }
 .close-btn {
   position: absolute;
   top: 0%;
   right: 0%;
+  cursor: pointer;
 }
