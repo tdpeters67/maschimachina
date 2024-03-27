@@ -21,12 +21,14 @@ export default function Catalog() {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur.
           </div>
-          <div className="get-pdf">
-            <a href="/assets/Regar_Final.pdf" className="pdf-link">
-              {" "}
-              <p>{"\u00B7"} </p>get the catalog <p>{"\u00B7"} </p>
-            </a>
-          </div>
+
+          <a href="/assets/Regar_Final.pdf" className="pdf-link">
+            {" "}
+            <p>{"\u00B7"} </p> get the pdf <p>{"\u00B7"} </p>
+          </a>
+          <a href="/contact" className="chit-chat">
+            <p>{"\u00B7"} </p> queries, ordering, chit chat <p>{"\u00B7"} </p>
+          </a>
         </div>
       </div>
     </PageLayout>
