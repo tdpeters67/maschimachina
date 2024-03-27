@@ -1,11 +1,11 @@
 .catalog-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   padding-left: 10rem;
   padding-right: 10rem;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .catalog-photo {
   width: 32rem;
