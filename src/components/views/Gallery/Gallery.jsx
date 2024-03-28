@@ -12,11 +12,16 @@ export default function Gallery({}) {
   const dialog = useRef();
   const [slideNumber, setSlideNumber] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
+  const [touchPosition, setTouchPosition] = useState(null);
 
   Gallery.propTypes = {
     id: PropTypes.int,
   };
 
+  let params = useParams();
+  const gallery = getGalleryConfig(parseInt(params.galleryId));
+
+  //lightbox functions
   function openLightBox(index) {
     setModalOpen(true);
     dialog.current.showModal();
@@ -39,8 +44,30 @@ export default function Gallery({}) {
     document.body.style.overflow = "unset";
   };
 
-  let params = useParams();
-  const gallery = getGalleryConfig(parseInt(params.galleryId));
+  const handleTouchStart = (e) => {
+    const touchDown = e.touches[0].clientX;
+    setTouchPosition(touchDown);
+  };
+  const handleTouchMove = (e) => {
+    const touchDown = touchPosition;
+
+    if (touchDown === null) {
+      return;
+    }
+
+    const currentTouch = e.touches[0].clientX;
+    const diff = touchDown - currentTouch;
+
+    if (diff > 5) {
+      nextSlide();
+    }
+
+    if (diff < -5) {
+      prevSlide();
+    }
+
+    setTouchPosition(null);
+  };
 
   return (
     <>
@@ -52,6 +79,8 @@ export default function Gallery({}) {
         prevSlide={prevSlide}
         nextSlide={nextSlide}
         handleCloseModal={handleCloseModal}
+        handleTouchMove={handleTouchMove}
+        handleTouchStart={handleTouchStart}
       />
       <PageLayout>
         <div className="gallery-content">

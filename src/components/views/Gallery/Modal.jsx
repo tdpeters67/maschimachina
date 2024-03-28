@@ -2,7 +2,16 @@ import { forwardRef } from "react";
 import "./Modal.css";
 
 const Modal = forwardRef(function Modal(
-  { gallery, galleryId, slideNumber, prevSlide, nextSlide, handleCloseModal },
+  {
+    gallery,
+    galleryId,
+    slideNumber,
+    prevSlide,
+    nextSlide,
+    handleCloseModal,
+    handleTouchStart,
+    handleTouchMove,
+  },
   ref
 ) {
   function handleKeyDown(event) {
@@ -24,6 +33,8 @@ const Modal = forwardRef(function Modal(
       ref={ref}
       className="sliderWrap"
       onKeyDown={handleKeyDown}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
       onClick={(e) => {
         if (e.currentTarget === e.target) {
           handleCloseModal();
