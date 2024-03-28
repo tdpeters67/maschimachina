@@ -70,8 +70,8 @@ export default function Gallery({}) {
                   src={`/assets/gallery/${params.galleryId}/${item.id}.png`}
                   alt={item.alt}
                   className="effects"
-                  height="400px"
-                  width="400px"
+                  // height="400px"
+                  // width="400px"
                   effect="blur"
                 />
                 <div className="image-title fade">{item.title}</div>

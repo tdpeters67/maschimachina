@@ -1,5 +1,5 @@
 .slider-img {
-  width: 700px;
+  width: 80vw;
 }
 dialog {
   border: none;
@@ -30,4 +30,9 @@ dialog::backdrop {
   top: 0%;
   right: 0%;
   cursor: pointer;
+}
+@media screen and (min-width: 600px) {
+  .slider-img {
+    width: 700px;
+  }
 }
