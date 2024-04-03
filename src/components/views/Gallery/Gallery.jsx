@@ -90,13 +90,14 @@ export default function Gallery({}) {
             <div className="gallery-name">{gallery.name}</div>
             <div className="gallery-description">{gallery.description}</div>
           </div>
-          <ul className="grid media-grid">
+          <ul className="grid">
             {gallery.assets.map((item, index) => (
               <li
                 key={index}
                 className="grid-item"
                 onClick={() => openLightBox(index)}
               >
+              <div className="hover-bg"></div>
                 <LazyLoadImage
                   src={`/assets/gallery/${params.galleryId}/${item.id}.png`}
                   alt={item.alt}

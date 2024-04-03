@@ -85,4 +85,44 @@
     display: flex;
     font-size: 1.5rem;
   }
+
+  .button-link {
+    /*  */
+    display: inline-block;
+    position: relative;
+  }
+
+  .button-link:not(:last-of-type) { margin-right: 45px;}
+
+  .button-link::before,
+  .button-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #000;
+    /* border-radius: 50%; */
+    width: 3px;
+    /* height: 100%; */
+    top: 40%;
+    bottom: 40%;
+    transition: all 300ms ease;
+  }
+
+  .button-link::before {
+    left: -10px;
+  }
+
+  .button-link::after {
+    right:-10px;
+  }
+
+  .button-link:hover::before {
+    top: 0;
+    bottom: 0;
+  }
+
+  .button-link:hover::after {
+    top: 0;
+    bottom: 0;
+  }
 }

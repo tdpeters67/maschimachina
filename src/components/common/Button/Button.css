@@ -1,0 +1,16 @@
+.button-wrap {
+    display: inline-block;
+    position: relative;
+}
+
+.button-wrap .btn {
+    color: rgba(0, 0, 0, 0.95);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 15px;
+    text-transform: lowercase;
+    border: 8px rgba(0, 0, 0, 0.8) solid;
+    display: block;
+    background: transparent;
+}

@@ -1,0 +1,17 @@
+.button-wrap {
+    display: block;
+}
+
+.button-wrap:not(:last-of-type) {
+    margin: 0 0 30px 0;
+}
+
+@media screen and (min-width: 600px) {
+    .button-wrap {
+        display: inline-block;
+    }
+
+    .button-wrap:not(:last-of-type) {
+        margin: 0 30px 0 0;
+    }
+}

@@ -1,3 +1,5 @@
+import Button from "../../common/Button/Button";
+import ButtonList from "../../common/ButtonList/ButtonList";
 import { PageLayout } from "../../common/Layout/PageLayout";
 import "./Catalog.css";
 export default function Catalog() {
@@ -19,14 +21,12 @@ export default function Catalog() {
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
-          <a href="/assets/Regar_Final.pdf" className="pdf-link">
-            {" "}
-            <p>{"\u00B7"} </p> get the pdf <p>{"\u00B7"} </p>
-          </a>
-          <a href="/contact" className="chit-chat">
-            <p>{"\u00B7"} </p> queries, ordering, chit chat <p>{"\u00B7"} </p>
-          </a>
+          pariatur.<br/>
+          <a href="/assets/Regar_Final.pdf" className="button-link pdf-link">get the pdf</a>
+          <a href="/contact" className="button-link chit-chat">queries, ordering, chit chat</a>
+          <ButtonList buttons={[
+            {text: 'get the pdf'}
+          ]} />
         </div>
       </div>
     </PageLayout>
