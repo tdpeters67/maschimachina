@@ -22,11 +22,9 @@ export const PrimaryNav = () => {
       <ul className="nav-links">
         {navConfig.map((item) => (
           <li key={item.id} className="nav-link">
-            <h1>
-              <a href={item.link ?? `/${item.title.toLowerCase()}`}>
-                {item.title}
-              </a>
-            </h1>
+            <a href={item.link ?? `/${item.title.toLowerCase()}`}>
+              {item.title}
+            </a>
           </li>
         ))}
       </ul>

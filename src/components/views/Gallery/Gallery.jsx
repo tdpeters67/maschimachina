@@ -43,11 +43,13 @@ export default function Gallery({}) {
     dialog.current.close();
     document.body.style.overflow = "unset";
   };
+  ///swipe functions
 
   const handleTouchStart = (e) => {
     const touchDown = e.touches[0].clientX;
     setTouchPosition(touchDown);
   };
+
   const handleTouchMove = (e) => {
     const touchDown = touchPosition;
 
@@ -58,11 +60,11 @@ export default function Gallery({}) {
     const currentTouch = e.touches[0].clientX;
     const diff = touchDown - currentTouch;
 
-    if (diff > 5) {
+    if (diff > 13) {
       nextSlide();
     }
 
-    if (diff < -5) {
+    if (diff < -13) {
       prevSlide();
     }
 

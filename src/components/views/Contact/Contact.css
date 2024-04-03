@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
   gap: 1rem;
 }
@@ -17,12 +18,16 @@
 .contact-header-title {
   font-size: 3rem;
 }
+.contact-header-description {
+  text-align: center;
+}
 
 form {
   display: flex;
   flex-direction: column;
   font: inherit;
   gap: 5px;
+  max-width: 75%;
 }
 input {
   background-color: white;
@@ -46,4 +51,7 @@ textarea {
   align-self: flex-end;
   white-space: nowrap;
   border: none;
+}
+
+@media screen and (min-width: 600px) {
 }
