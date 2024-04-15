@@ -12,7 +12,7 @@ export default function Collections() {
     <PageLayout>
       <div className="collections-page-content">
         <div className="collections-links">
-          <a href="/gallery/1">
+          <a href="/gallery/1" className="coll-container">
             <figure>
               <LazyLoadImage
                 className="collection-img"
@@ -24,7 +24,7 @@ export default function Collections() {
               </figcaption>
             </figure>
           </a>
-          <a href="/gallery/2">
+          <a href="/gallery/2" className="coll-container">
             <figure>
               <LazyLoadImage
                 className="collection-img"
@@ -36,16 +36,14 @@ export default function Collections() {
               </figcaption>
             </figure>
           </a>
-          <a href="/gallery/3">
+          <a href="/gallery/3" className="coll-container">
             <figure>
               <LazyLoadImage
                 className="collection-img"
                 src={img3}
                 effect="blur"
               />
-              <figcaption className="collection-caption">
-                One Time Only
-              </figcaption>
+              <figcaption className="collection-caption">One Shots</figcaption>
             </figure>
           </a>
         </div>
