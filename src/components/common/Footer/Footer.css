@@ -5,6 +5,7 @@
   /* display: block; */
   text-align: center;
   font-size: small;
+  padding-bottom: 2rem;
 }
 .footer-container {
   position: relative;

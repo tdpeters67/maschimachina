@@ -80,6 +80,7 @@
     font-size: 5rem;
     white-space: nowrap;
     grid-area: text;
+    justify-self: left;
   }
   .catalog-photo {
     width: 32rem;
