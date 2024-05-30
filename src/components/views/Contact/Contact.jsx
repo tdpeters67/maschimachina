@@ -18,15 +18,19 @@ export default function Contact() {
               imaschination@gmail.com
             </p>
           </div>
-          <input type="text" placeholder="name" name="name" />
-          <input type="email" placeholder="email" name="email" />
+          <input required type="text" placeholder="name" name="name" />
+          <input required type="email" placeholder="email" name="email" />
           <textarea
+            required
             cols="30"
             rows="10"
             name="message"
             placeholder="whatcha thinking?"
           />
-          <button className="formbtn">send</button>
+
+          <button type="submit" className="formbtn">
+            send
+          </button>
         </form>
       </div>
     </>

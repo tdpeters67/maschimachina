@@ -53,5 +53,14 @@ textarea {
   border: none;
 }
 
+.error {
+  color: red;
+  display: none;
+}
+
+form:invalid ~ span {
+  display: block;
+}
+
 @media screen and (min-width: 600px) {
 }
