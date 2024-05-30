@@ -13,7 +13,7 @@ export default function Home() {
         </section>
         {
           <img
-            src={`/assets/home/${Math.floor(1 + Math.random() * 3)}.png`}
+            src={`/assets/home/${Math.floor(1 + Math.random() * 5)}.jpg`}
             alt="home photo"
             className="home-photo"
           ></img>

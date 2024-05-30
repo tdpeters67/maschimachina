@@ -36,7 +36,16 @@ dialog::backdrop {
   padding-top: 10px;
   width: 80vw;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
+  .slider-img {
+    width: 80vw;
+  }
+  .modal-description {
+    width: auto;
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 756px) {
   .slider-img {
     width: 700px;
   }

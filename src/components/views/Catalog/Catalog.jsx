@@ -11,25 +11,20 @@ export default function Catalog() {
         <div className="catalog-title">The Catalog</div>
         <div className="catalog-description">
           {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          The Catalog is coming soon; in the meantime, please send any inventory
+          inquiries{" "}
+          <a style={{ color: "blue" }} href="/contact">
+            here
+          </a>
+          .
           <br />
           <div className="catalog-links">
-            <a href="/assets/Regar_Final.pdf" className="button-link pdf-link">
+            {/* <a href="/assets/Regar_Final.pdf" className="button-link pdf-link">
               get the pdf
-            </a>
-            <a href="/contact" className="button-link chit-chat">
+            </a> */}
+            {/* <a href="/contact" className="button-link chit-chat">
               queries, ordering, chit chat
-            </a>
+            </a> */}
           </div>
           {/* <ButtonList
             buttons={[

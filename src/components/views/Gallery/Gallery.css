@@ -1,6 +1,5 @@
 .gallery-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
   padding: 2% 2% 0% 2%;
 }
@@ -35,35 +34,31 @@
   align-items: center; */
   display: grid;
   grid-gap: 30px;
+  justify-self: center;
 }
 
 .grid-item {
   position: relative;
-  /* display: flex;
-  flex-direction: column;
-  position: relative;
+  max-width: 400px;
   overflow: hidden;
-  justify-content: center;
-  align-items: center; */
 }
-
-/* .grid-item:not(:last-of-type) {
-  margin-bottom: 30px;
-} */
 
 .image-title {
-  /* max-width: 75%;
-  font-size: 3.5vw;
-  text-align: center; */
   display: none;
+  color: white;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
-.grid-item > span > img {
-  display: block;
-  max-width: 100%;
-}
 .image-title {
   user-select: none;
+}
+
+.grid-item > img {
+  display: block;
+  max-width: 400px;
+  object-fit: cover;
+  justify-self: center;
 }
 
 .grid-item > .image-title {
@@ -127,13 +122,14 @@
     z-index: 1;
   }
 
-  .grid-item:hover .hover-bg {
-    opacity: 1;
+  .grid-item > img {
+    display: block;
+    max-width: 400px;
+    object-fit: cover;
   }
 
-  .grid-item > span > img {
-    display: block;
-    max-width: 100%;
+  .grid-item:hover .hover-bg {
+    opacity: 1;
   }
 
   .grid-item > .image-title {
@@ -154,7 +150,7 @@
     transition: 200ms ease-in-out;
   }
 
-  .effects:hover {
+  .grid-item:hover > img.effects {
     filter: blur(3px);
     transform: scale(1.1);
   }

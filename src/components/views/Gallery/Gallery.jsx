@@ -4,8 +4,6 @@ import { getGalleryConfig } from "../../../utils/galleryConfig";
 import { useParams } from "react-router-dom";
 import { PageLayout } from "../../common/Layout/PageLayout";
 import { useState, useRef, useEffect } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import Modal from "./Modal";
 
 export default function Gallery({}) {
@@ -99,14 +97,11 @@ export default function Gallery({}) {
                 className="grid-item"
                 onClick={() => openLightBox(index)}
               >
-                <div className="hover-bg"></div>
-                <LazyLoadImage
+                {/* <div className="hover-bg"></div> */}
+                <img
                   src={`/assets/gallery/${params.galleryId}/${item.id}.png`}
                   alt={item.alt}
                   className="effects"
-                  // height="400px"
-                  // width="400px"
-                  effect="blur"
                 />
                 <div className="image-title fade">{item.title}</div>
               </li>
