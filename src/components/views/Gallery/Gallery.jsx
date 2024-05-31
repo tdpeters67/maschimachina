@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { PageLayout } from "../../common/Layout/PageLayout";
 import { useState, useRef, useEffect } from "react";
 import Modal from "./Modal";
+import Image from "./Image";
 
 export default function Gallery({}) {
   const dialog = useRef();
@@ -60,11 +61,11 @@ export default function Gallery({}) {
     const currentTouch = e.touches[0].clientX;
     const diff = touchDown - currentTouch;
 
-    if (diff > 13) {
+    if (diff > 5) {
       nextSlide();
     }
 
-    if (diff < -13) {
+    if (diff < -5) {
       prevSlide();
     }
 
@@ -98,10 +99,11 @@ export default function Gallery({}) {
                 onClick={() => openLightBox(index)}
               >
                 {/* <div className="hover-bg"></div> */}
-                <img
+                <Image
                   src={`/assets/gallery/${params.galleryId}/${item.id}.png`}
                   alt={item.alt}
                   className="effects"
+                  loading="lazy"
                 />
                 <div className="image-title fade">{item.title}</div>
               </li>
