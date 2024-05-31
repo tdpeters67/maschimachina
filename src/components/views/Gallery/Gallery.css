@@ -61,6 +61,11 @@
   object-position: center;
 }
 
+.effects {
+  object-fit: cover;
+  object-position: center;
+}
+
 .grid-item > .image-title {
   /* position: absolute;
   inset: 0;
