@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="68"
+   height="68"
+   viewBox="0 0 17.991666 17.991667"
+   version="1.1"
+   id="svg1057"
+   inkscape:export-filename="rightnavarrow.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1059"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs1054" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:21.3206px;line-height:1.25;font-family:Futura;-inkscape-font-specification:'Futura, Bold';font-variant-ligatures:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.888359;stroke-opacity:1"
+       x="0.96674222"
+       y="16.626348"
+       id="text1887"
+       transform="scale(0.94720337,1.0557395)"><tspan
+         sodipodi:role="line"
+         id="tspan1885"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.888359;stroke-opacity:1"
+         x="0.96674222"
+         y="16.626348">X</tspan></text>
+  </g>
+</svg>

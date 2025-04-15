@@ -4,6 +4,7 @@ import Gallery from "./components/views/Gallery/Gallery";
 import Contact from "./components/views/Contact/Contact";
 import Catalog from "./components/views/Catalog/Catalog";
 import { Routes, Route } from "react-router-dom";
+import "./index.css";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/collections" element={<Collections />} />
         <Route path="/catalog" element={<Catalog />} />
-        <Route path="/gallery/:galleryId" element={<Gallery />}/>
+        <Route path="/gallery/:galleryId" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>

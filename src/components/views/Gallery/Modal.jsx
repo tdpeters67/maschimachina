@@ -42,17 +42,17 @@ const Modal = forwardRef(function Modal(
       }}
     >
       <img
-        src="/assets/left-svgrepo-com.svg"
+        src="/assets/LeftNavArrow.svg"
         className="back-btn"
         onClick={prevSlide}
       ></img>
       <img
-        src="/assets/right-svgrepo-com.svg"
+        src="/assets/RightNavArrow.svg"
         className="next-btn"
         onClick={nextSlide}
       ></img>
       <img
-        src="/assets/x-svgrepo-com.svg"
+        src="/assets/xedout.svg"
         className="close-btn"
         onClick={handleCloseModal}
       ></img>

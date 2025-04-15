@@ -1,8 +1,20 @@
+@font-face {
+  font-family: "ftn45";
+  src: url("../assets/ftn45-webfont.woff2") format("woff2"),
+    url("../assets/ftn45-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "ftn45", sans-serif;
+}
+
 :root {
-  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-family: "ftn45", sans-serif;
 
   line-height: 1.5;
-  font-weight: 10;
+  font-weight: 300;
 
   color-scheme: light dark;
   color: rgba(1, 1, 1, 0.87);
